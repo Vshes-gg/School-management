@@ -1,0 +1,154 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: bisque;
+
+}
+
+
+body {
+    font-family: 'Merriweather', serif;
+    background-color: #2C3E50;
+
+}
+
+/* About us CSS */
+.aboutus-section-full {
+    padding: 50px 20px;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('../Images/school.jpg');
+    background-position: center;
+    background-size: cover;
+    color: bisque;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.aboutus-title-main {
+    text-align: center;
+}
+
+.aboutus-title-main h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    animation: slideIn 1s ease-in-out;
+}
+
+.aboutus-title-main hr {
+    margin: 20px auto;
+    width: 50%;
+    border: 1px solid bisque;
+}
+
+.aboutus-container-1, .aboutus-container-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.aboutus-image-box img {
+    width: 50%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    animation: zoomIn 1s ease-in-out;
+}
+
+.aboutus-text-main h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.aboutus-text-main p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease-in-out;
+}
+.aboutus-container-2{
+    color: bisque;
+    font-size: 20px;
+    
+}
+.below-message-aboutus{
+    color: bisque;
+    font-size: 20px;
+    text-align: justify;
+    padding: 20px;
+}
+.aboutus-principal-left{
+    text-align: center;
+}
+.aboutus-principal-right{
+    text-align: justify;
+}
+
+.principal-post{
+    font-size: 15px;
+}
+.aboutus-principal-photo{
+    padding: 20px;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.5);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media (min-width: 600px) {
+    .aboutus-container-1, .aboutus-container-2 {
+        flex-direction: row;
+        text-align: left;
+    }
+    .aboutus-text-main{
+        font-size: 5 px;
+    }
+
+    .aboutus-image-box img {
+        width: 25%;
+        margin-right: 20px;
+    }
+}
+@media (max-width: 600px) {
+    .aboutus-principal-right {
+        font-size: 1em;
+    }
+}

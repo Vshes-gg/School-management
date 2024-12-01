@@ -1,0 +1,170 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background: #f5f5f5; /* Light gray background */
+    color: #333; /* Neutral text color */
+   
+  }
+  
+  /* Header */
+  header {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('Images/school.jpg');
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .header-content {
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif; /* Modern heading font */
+    margin-bottom: 20px;
+  }
+  
+  header p {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+  }
+  
+  header a {
+    padding: 12px 25px;
+    background: #FFC107; /* Accent Gold */
+    color: #1E88E5; /* Primary Blue */
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  header a:hover {
+    background: #FFD54F; /* Brighter gold */
+    color: #004BA0; /* Darker blue */
+  }
+  
+  /* Sections */
+  section {
+    padding: 60px 20px;
+    margin: 30px 0;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    color: #1E88E5; /* Primary Blue */
+  }
+  
+  section p {
+    text-align: center;
+    color: #555; /* Neutral Dark Gray */
+    max-width: 800px;
+    margin: auto;
+    font-size: 1.2rem;
+  }
+  
+  /* Programs Section */
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .card {
+    width: 300px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    background: #E3F2FD; /* Light blue hover effect */
+  }
+  
+  .card h3 {
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    color: #1E88E5; /* Primary Blue */
+  }
+  
+  .card p {
+    color: #666; /* Neutral Gray */
+    font-size: 1rem;
+  }
+  
+  /* Achievements Section */
+  .stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .stat {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  
+  .stat span {
+    display: block;
+    font-size: 2rem;
+    color: #FFC107; /* Accent Gold */
+  }
+  
+  /* Footer */
+  footer {
+    background: #1E88E5; /* Primary Blue */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+  }
+  
+  footer p {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2.5rem;
+    }
+  
+    header p {
+      font-size: 1rem;
+    }
+  
+    header a {
+      font-size: 0.9rem;
+    }
+  
+    .cards, .stats {
+      flex-direction: column;
+    }
+  
+    .card, .stat {
+      width: 90%;
+    }
+  }
+  

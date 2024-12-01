@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    overflow-x: hidden; 
+    margin: 0;
+    width: 100%;
+}
+
+h1, h2, h3 {
+    color: #3586ff;
+    word-wrap: break-word;
+}
+
+
+.contact-section-all-elements {
+    padding: 10px;
+}
+
+
+.container-for-contact-section {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+}
+
+
+.general-contact-information-details {
+    background-color: white;
+    padding: 10px; 
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.general-contact-information-details h3 {
+    font-size: 1.5rem;
+}
+
+.general-contact-information-details p {
+    font-size: 1rem;
+}
+
+
+.teachers-contact-information-details {
+    background-color: white;
+    padding: 10px; 
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.teachers-contact-information-details h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.teachers-contact-information-details table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 5px;
+}
+
+.teachers-contact-information-details th, .teachers-contact-information-details td {
+    padding: 5px; 
+    border: 1px solid #ddd;
+    text-align: left;
+    word-wrap: break-word;
+    font-size: 1rem;
+}
+
+.teachers-contact-information-details th {
+    background-color: #3586ff;
+    color: white;
+}
+
+.teachers-contact-information-details td {
+    color: #555;
+}
+
+/* Google Map Section */
+.school-google-map-container {
+    text-align: center;
+    padding: 20px; 
+}
+
+.school-google-map-container h1 {
+    margin-bottom: 20px; 
+}
+
+.google-map-frame-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.google-map-frame-wrapper iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    border: none;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/*Mobile */
+@media (max-width: 700px) {
+    .general-contact-information-details, .teachers-contact-information-details, .school-google-map-container {
+        padding: 5px;
+    }
+
+    .general-contact-information-details h3, .teachers-contact-information-details h3 {
+        font-size: 1.2rem;
+    }
+
+    .general-contact-information-details p, .teachers-contact-information-details th, .teachers-contact-information-details td {
+        font-size: 0.7rem;
+    }
+
+    .google-map-frame-wrapper iframe {
+        height: 250px; 
+    }
+}
